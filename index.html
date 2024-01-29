@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="leftSide">
+        <svg class='main' viewBox="0 0 400 400">
+          <mask id="m">
+            <rect fill="#fff" width="25" height="37" />
+          </mask>
+          <g id="pov1">
+            <g id="baseGroup">
+              <rect class="bg" fill="#774"/>
+              <g id="tiles"></g>
+              <g id="p1" class="player" mask="url(#m)">
+                <image class="sprite" x="-29" y="-152" href="https://assets.codepen.io/721952/marioWalk_1.png" />
+              </g>        
+              <g id="p2" class="player" mask="url(#m)" style="filter: hue-rotate(-90deg);">
+                <image class="sprite" x="-29" y="-152" href="https://assets.codepen.io/721952/marioWalk_1.png" />
+              </g>
+            </g>
+          </g>    
+        </svg>
+        
+        <svg class="arrows" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice" fill="rgba(0,250,0,0)">
+          <polygon points="600,600 349,0 851,0"/>
+          <polygon points="600,600 851,0 1200,360"/>
+          <polygon points="600,600 1200,360 1200,851"/>
+          <polygon points="600,600 1200,851 851,1200"/>
+          <polygon points="600,600 851,1200 349,1200"/>
+          <polygon points="600,600 349,1200 0,851"/>
+          <polygon points="600,600 0,851 0,360"/>
+          <polygon points="600,600 0,360 349,0"/>    
+        </svg>
+      </div>
+      
+      <div class="rightSide">
+        <svg class='main' viewBox="0 0 400 400">    
+          <g id="pov2">      
+            <use href="#baseGroup" />
+          </g>
+        </svg>
+        
+        <svg class="arrows" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice" fill="rgba(0,250,0,0)">
+          <polygon points="600,600 349,0 851,0"/>
+          <polygon points="600,600 851,0 1200,360"/>
+          <polygon points="600,600 1200,360 1200,851"/>
+          <polygon points="600,600 1200,851 851,1200"/>
+          <polygon points="600,600 851,1200 349,1200"/>
+          <polygon points="600,600 349,1200 0,851"/>
+          <polygon points="600,600 0,851 0,360"/>
+          <polygon points="600,600 0,360 349,0"/>
+        </svg>
+      </div>
+      
+      <div class="score" style="opacity:0">0 | 0</div>
+</body>
+</html>
